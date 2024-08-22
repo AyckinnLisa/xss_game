@@ -4,7 +4,7 @@ Dans ce premier exercice, il s’agit d’injecter un script qui va générer un
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_1/img/lvl1_home.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_1/img/lvl1_home.png"
         style="width:60%">
 </div>
 
@@ -20,7 +20,7 @@ En suivant les cours présents et l’utilisation de `bWAPP`, nous allons inject
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_1/img/lvl1_injected_script.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_1/img/lvl1_injected_script.png"
         style="width:60%">
 </div>
 
@@ -29,7 +29,7 @@ Une fois le code écrit, on clique sur `Search` pour l’envoyer.
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_1/img/lvl1_complete.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_1//img/lvl1_complete.png"
         style="width:60%">
 </div>
 
@@ -37,6 +37,6 @@ Une fois le code écrit, on clique sur `Search` pour l’envoyer.
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_1/img/lvl1_hint.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_1//img/lvl1_hint.png"
         style="width:60%">
 </div>

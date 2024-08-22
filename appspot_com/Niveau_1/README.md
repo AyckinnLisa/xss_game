@@ -12,7 +12,7 @@ Dans ce premier exercice, il s’agit d’injecter un script qui va générer un
 
 Nous choisirons cette dernière option.
 
-En suivant les cours présents et l’utilisation de `bWAPP`, nous allons injecter le script d’alerte comme suit :
+Nous allons injecter le script d’alerte comme suit :
 
 ```
 <script>alert("hacked");</script>        

@@ -5,7 +5,7 @@ Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice préc
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_home.png"
-        style="width:100%">
+        style="width:80%">
 </div>
 
 <br>Il est à noter que l’application WEB enregistre tous les posts donc si vous insérez du code pour exécuter l'alerte, ce niveau sera résolu à chaque fois que vous rechargerez l'application.
@@ -23,7 +23,7 @@ Vérifions cela dans le code source du cadre:
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_html_code.png"
-        style="width:100%">
+        style="width:80%">
 </div>
 
 Bien, ce sera notre faille.
@@ -60,7 +60,7 @@ On clique sur le bouton `Share status`:
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_hacked.png"
-        style="width:100%">
+        style="width:80%">
 </div>
 
 #### Explications
@@ -72,5 +72,5 @@ Bravo, vous venez de passez le second niveau. Vous pouvez maintenant passer au n
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_complete.png"
-        style="width:100%">
+        style="width:80%">
 </div>

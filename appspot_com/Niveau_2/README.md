@@ -4,7 +4,7 @@ Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice préc
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_2/img/lvl2_home.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_2/img/lvl2_home.png"
         style="width:60%">
 </div>
 
@@ -22,7 +22,7 @@ Vérifions cela dans le code source du cadre:
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_2/img/lvl2_html_code.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_2/img/lvl2_html_code.png"
         style="width:60%">
 </div>
 
@@ -59,7 +59,7 @@ On clique sur le bouton `Share status`:
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_2/img/lvl2_hacked.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_2/img/lvl2_hacked.png"
         style="width:60%">
 </div>
 
@@ -71,6 +71,6 @@ Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au 
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_games/blob/main/niveau_1/img/lvl2_complete.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/Niveau_2/img/lvl2_complete.png"
         style="width:60%">
 </div>

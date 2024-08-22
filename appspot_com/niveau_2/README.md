@@ -67,7 +67,7 @@ On clique sur le bouton `Share status`:
 
 La page a essayé d'afficher l'image `x`. Comme cette image n'existe pas, elle a continué d'exécuter la commande, en l'occurence, l'alerte concernant une éventuelle erreur de chargement, ici, notre popup.
 
-Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
+Bravo, vous venez de passez le second niveau. Vous pouvez maintenant passer au niveau suivant. 
 
 <div align="center">
     <img

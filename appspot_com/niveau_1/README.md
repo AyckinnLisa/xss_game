@@ -33,7 +33,7 @@ Mais avant, regardons le **premier indice**:
 3. Très bien, un dernier indice: &lt;script&gt; ... alert ...
 </pre>
 
-Nous allons injecter le script d’alerte ci-dessous dans le champs de saisie:
+<br>Bien, nous allons injecter le script d’alerte ci-dessous dans le champs de saisie:
 
 ```
 <script>alert("ACCES AUTORISE !");</script>        

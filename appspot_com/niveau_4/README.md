@@ -104,6 +104,7 @@ Voyons à quoi fait référence cette erreur:
 ```
 
 L'idée va donc être de placer le payload dans la fonction `startTimer`. 
+
 <br>Essayons le script dans la barre d'adresse, le champ de saisie du timer ne fonctionne pas:
 
 ```html

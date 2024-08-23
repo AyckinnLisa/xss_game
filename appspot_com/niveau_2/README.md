@@ -32,9 +32,9 @@ Bien, ce sera notre faille.
 Voyons le deuxième indice:
 
 <pre>
-2. Entering a script tag on this level will not work. Try an element with a JavaScript attribute instead.
+2. Entering a &lt;script&gt; tag on this level will not work. Try an element with a JavaScript attribute instead.
 
-2. Utiliser une balise script sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut JavaScript à la place.
+2. Utiliser une balise &lt;script&gt; sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut JavaScript à la place.
 </pre>
 
 Cet indice est suffisamment clair, je ne m'étends pas dessus.

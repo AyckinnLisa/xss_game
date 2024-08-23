@@ -38,8 +38,8 @@ Regardons le troisième indice:
 Regardons le quatrième et dernier indice:
 
 <pre>
-4. As before, using script as a payload won't work because the browser won't execute scripts added after the page has loaded.
-4. Comme précédemment, l'utilisation de script comme charge utile ne fonctionnera pas car le navigateur n'exécute pas les scripts ajoutés après le chargement de la page.
+4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after the page has loaded.
+4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur n'exécute pas les scripts ajoutés après le chargement de la page.
 </pre>
 
 Regardons, maintenant, les photos. On peut voir que l'ancre de l'URL change à chaque photo... logique.

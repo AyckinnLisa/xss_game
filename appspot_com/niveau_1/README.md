@@ -39,12 +39,6 @@ Mais avant, regardons le **premier indice**:
 <script>alert("ACCES AUTORISE !");</script>        
 ```
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_1/img/lvl1_injected_script.png"
-        style="width:80%">
-</div>
-
 Une fois le code écrit, on clique sur `Search` pour l’envoyer.
 
 <div align="center">

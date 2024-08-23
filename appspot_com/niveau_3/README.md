@@ -1,6 +1,6 @@
 ## [**NIVEAU 3 - THAT SINKING FEELING...**](https://xss-game.appspot.com/level3)
 
-Comme nous l'avons dans le niveau précédent, certaines fonctions JavaScript courantes sont des mines d'or pour l'exécution de code, ce qui signifie qu'elles exécutent, par le navigateur, tous les scripts qui apparaissent dans leur entrée.
+Comme nous l'avons vu dans le niveau précédent, certaines fonctions JavaScript courantes sont des mines d'or pour l'exécution de code, ce qui signifie qu'elles exécutent, par le navigateur, tous les scripts qui apparaissent dans leur champ d'entrée.
 <br>Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions en sous-marin.
 
 Ici encore, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
@@ -14,103 +14,77 @@ Ici encore, le but est d'injecter un script pour faire apparaître un popup d'al
 Cette fois, nous ne pourrons pas utiliser la page comme terrain de jeu car il n'y a pas de champ d'entrée.
 <br>Nous devraons donc travailler avec l'adresse URL pour injecter notre `payload`.
 
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice précédent, à savoir, injecter un script qui va générer un popup d’alerte.
-
-
-<br>Il est à noter que l’application WEB enregistre tous les posts donc si vous insérez du code pour exécuter l'alerte, ce niveau sera résolu à chaque fois que vous rechargerez l'application.
-
 Regardons le premier indice:
 
 <pre>
-1. Note that the "welcome" post contains HTML, which indicates that the template doesn't escape the contents of status messages.
-
-1. Notez que le message de "bienvenue" contient du HTML, ce qui indique que le modèle n'échappe pas au contenu des messages d'état.
+1. To locate the cause of the bug, review the JavaScript to see where it handles user-supplied input.
+1. Pour localiser la cause du bug, examinez le JavaScript pour voir où il traite les données fournies par l'utilisateur
 </pre>
 
-Vérifions cela dans le code source du cadre:
-
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_html_code.png"
-        style="width:100%">
-</div>
-
-Bien, ce sera notre faille.
-<br>Ce qu'il faut comprendre de ce code, c'est que les posts ne passent par aucun filtre. autrement, dit, nous pouvons utiliser n'importe qu'elle méthode pour attaquer la page.
-
-Voyons le deuxième indice:
+Regardons le deuxième indice:
 
 <pre>
-2. Entering a script tag on this level will not work. Try an element with a JavaScript attribute instead.
-
-2. Utiliser une balise script sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut JavaScript à la place.
+2. Data in the window.location object can be influenced by an attacker.
+2. Les données de l'objet window.location peuvent être influencées par un attaquant.
 </pre>
-
-Cet indice est suffisamment clair, je ne m'étends pas dessus.
 
 Regardons le troisième indice:
 
 <pre>
-3. This level is sponsored by the letters i, m and g and the attribute onerror.
-
-3. Ce niveau est sponsorisé par les lettres i, m et g et l'attribut onerror.
+3. When you've identified the injection point, think about what you need to do to sneak in a new HTML element.
+3. Quand vous aurez identifié le point d'injection, réfléchissez à ce qu'il faut faire pour introduire un nouvel élément HTML.
 </pre>
 
-L'élément à garder dans ce troisième indice est l'attribut `onerror`.
+Regardons le quatrième et dernier indice:
 
-Il est maintenant temps d'injecter le `payload` dans le champs de texte:
+<pre>
+4. As before, using script as a payload won't work because the browser won't execute scripts added after the page has loaded.
+4. Comme précédemment, l'utilisation de script comme charge utile ne fonctionnera pas car le navigateur n'exécute pas les scripts ajoutés après le chargement de la page.
+</pre>
+
+Regardons, maintenant, les photos. On peut voir que l'ancre de l'URL change à chaque photo... logique.
+
+<pre>
+https://xss-game.appspot.com/level3/frame#1
+https://xss-game.appspot.com/level3/frame#2
+https://xss-game.appspot.com/level3/frame#3
+</pre>
+
+C'est donc après l'ancre que nous allons injecter le code.
+
+Mais avant, nous allons essayer de comprendre un peu la logique de l'application. Pour ce faire, cliquez sur `Target code (toogle)` juste en dessous de la page.
+<br>Cela nous affiche le code source de la page `index.html`. En analysant ce code, nous pouvons observer ceci:
+
+```html
+<script>
+      function chooseTab(num) {
+        // Dynamically load the appropriate image.
+        var html = "Image " + parseInt(num) + "<br>";
+        html += "<img src='/static/level3/cloud" + num + ".jpg' />";
+        $('#tabContent').html(html);
+ 
+        window.location.hash = num;
+ 
+        [...]
+</script>
+```
+
+"En quoi c'est interéssant" me direz-vous ?
+<br>Nous pouvons constater que le paramètre `num` est utilisé pour afficher l'image choisie par l'utilisateur. L'idée va donc être de casser les guillemets et d'inserer le script à la place du nom de l'image.
+
+**BONUS**: Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au moment 'T'.
+<br>C'est précisément ce paramètre variable qui va nous servir de faille.
+
+Dans la mesure où l'attribut `onerror` a bien fonctionné dans l'exercice précédent, nous allons le réutiliser dans l'URL:
 
 ```
-<img src='x' onerror='alert("Hacked... again!")'>
+https://xss-game.appspot.com/level3/frame#3' onerror='alert("Hacked...")';
 ```
-
-On clique sur le bouton `Share status`:
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_hacked.png"
-        style="width:100%">
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_3/img/lvl3_complete.png"
+        style="width:80%">
 </div>
-
-#### Explications
-
-La page a essayé d'afficher l'image `x`. Comme cette image n'existe pas, elle a continué d'exécuter la commande, en l'occurence, l'alerte concernant une éventuelle erreur de chargement, ici, notre popup.
 
 Bravo, vous venez de passez le second niveau. Vous pouvez maintenant passer au niveau suivant. 
-
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_complete.png"
-        style="width:100%">
-</div>

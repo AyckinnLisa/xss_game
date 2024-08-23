@@ -25,13 +25,14 @@ Nous allons injecter le script d’alerte comme suit :
 </div>
 
 Une fois le code écrit, on clique sur `Search` pour l’envoyer.
-<br>Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
 
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_1//img/lvl1_complete.png"
         style="width:80%">
 </div>
+
+Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
 
 <br>Voici les indices pour ce niveau :
 

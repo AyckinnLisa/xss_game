@@ -22,6 +22,7 @@ Mais avant, regardons le **premier indice**:
 <pre>
 1. To see the source of the application you can right-click on the frame and choose View Frame Source from the
 context menu or use your browser's developer tools to inspect network traffic.
+
 1. Pour voir la source de l'application, vous pouvez cliquer avec le bouton droit de la souris sur le cadre et
 choisir "Afficher la source du cadre" dans le menu contextuel ou utiliser les outils de développement de votre
 navigateur pour inspecter le trafic réseau.

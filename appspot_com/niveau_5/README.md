@@ -1,53 +1,64 @@
-### NIVEAU 5 - [BREAKING PROTOCOL](https://xss-game.appspot.com/level5)
+## NIVEAU 5 - [BREAKING PROTOCOL](https://xss-game.appspot.com/level5)
 
+### DESCRIPTION DE LA MISSION
+
+<pre>
 Les scripts intersites ne se limitent pas à l'échappement correct des données. Parfois, les attaquants peuvent faire de mauvaises choses même sans injecter de nouveaux éléments dans le DOM.
-
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_5/img/lvl5_home.png"
-        style="width:80%">
-</div>
-
-<br>Dans ce niveau, on nous présente « Groovy Reader 2.0 » et il nous est demandé de nous inscrire à ce programme bêta exclusif.
-<br>Pour changer, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
-
-Comme toujours, regardons les indices:
-
-**Premier indice**
-
-<pre>
-1. The title of this level is a hint.
-1. Le titre de ce niveau est un indice.
 </pre>
-
-**Deuxième indice**
-
-<pre>
-2. It is useful look at the source of the signup frame and see how the URL parameter is used.
-2. Il est utile de regarder la source de la page de connexion et de voir comment le paramètre URL est utilisé.
-</pre>
-
-D'un point de vue général, il est **TOUJOURS** utile de regarder le code source pour comprendre la logique de fonctionnement d'un programme ou d'une application, pour peu, biensûr, qu'on y ait accès. Cela doit être un réflexe, voire, **INSTINCTIF**.
 
 <br>
 
-**Troisième indice**
+### OBJECTIF DE LA MISSION
 
 <pre>
-3. If you want to make clicking a link execute Javascript (without using the onclick handler), how can you do it?
-3. Si vous voulez que le fait de cliquer sur un lien exécute du Javascript (sans utiliser le gestionnaire onclick), comment pouvez-vous le faire ?
+Injecter un script pour faire apparaître un alert() dans le contexte de l'application.
 </pre>
+
+<br>
+
+### INDICES
+
+**Premier indice**
+> [!TIP]
+> <pre>
+> 1. The title of this level is a hint.
+> 1. Le titre de ce niveau est un indice.
+> </pre>
+
+**Deuxième indice**
+> [!TIP]
+> <pre>
+> 2. It is useful look at the source of the signup frame and see how the URL parameter is used.
+> 2. Il est utile de regarder la source de la page de connexion et de voir comment le paramètre URL est utilisé.
+> </pre>
+
+D'un point de vue général, il est **TOUJOURS** utile de regarder le code source pour comprendre la logique de fonctionnement d'un programme ou d'une application, pour peu, biensûr, qu'on y ait accès. Cela doit être un réflexe, voire, **INSTINCTIF**.
+
+**Troisième indice**
+> [!TIP]
+> <pre>
+> 3. If you want to make clicking a link execute Javascript (without using the onclick handler), how can you do it?
+> 3. Si vous voulez que le fait de cliquer sur un lien exécute du Javascript (sans utiliser le gestionnaire onclick),
+> comment > pouvez-vous le faire ?
+> </pre>
 
 **Quatrième indice**
-
-<pre>
-4. If you're really stuck, take a look at this IETF draft.
-4. Si vous êtes vraiment bloqué, jetez un coup d'œil à ce projet de l'IETF
-</pre>
+> [!TIP]
+> <pre>
+> 4. If you're really stuck, take a look at this IETF draft.
+> 4. Si vous êtes vraiment bloqué, jetez un coup d'œil à ce projet de l'IETF
+> </pre>
 
 Lien du projet **I**nternet **E**ngineering **T**ask **F**orce: [IETF - Internet-Draft](https://datatracker.ietf.org/doc/html/draft-hoehrmann-javascript-scheme-00)
 
-<br>La première page ne contient aucune fonctionnalité intéressante. Regardons les codes-sources des pages données sous la frame.
+<br>
+
+### MISSION
+
+On nous présente « Groovy Reader 2.0 » et il nous est demandé de nous inscrire à ce programme bêta exclusif.
+
+La première page ne contient aucune fonctionnalité intéressante.
+<br>Regardons les codes-sources des pages données sous la frame.
 
 Ici, la page qui va nous intéresser est `signup.html` et plus précisément, la ligne 15:
 
@@ -90,10 +101,18 @@ https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert("ACCES AU
 
 Ensuite, appuyez sur la touche `Entrée` ou cliquez sur le bouton `Go` une seule fois, pour prendre en compte le lien, puis, cliquez sur le lien `Next>>`.
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_5/img/lvl5_complete.png"
-        style="width:80%">
-</div>
+<br>
 
-<br>Bravo, vous venez de passez le cinquième niveau. Vous pouvez maintenant passer au dernier niveau.
+> [!IMPORTANT]
+> <pre>
+> Congratulations, you executed an alert:
+>
+> ACCES AUTORISE !
+>
+> You can now advance to the next level.
+> </pre>
+
+<br>
+
+> [!NOTE]
+> Bravo, vous venez de passer le cinquième niveau. Vous pouvez maintenant passer au dernier suivant. 

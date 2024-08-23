@@ -32,7 +32,7 @@ Une fois le code écrit, on clique sur `Search` pour l’envoyer.
         style="width:80%">
 </div>
 
-Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
+<br>Bravo, vous venez de passez le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
 
 <br>Voici les indices pour ce niveau :
 

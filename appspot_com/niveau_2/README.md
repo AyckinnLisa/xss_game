@@ -73,4 +73,4 @@ La page a essayé d'afficher l'image `x`. Comme cette image n'existe pas, elle a
         style="width:80%">
 </div>
 
-Bravo, vous venez de passez le second niveau. Vous pouvez maintenant passer au niveau suivant. 
+<br>Bravo, vous venez de passez le second niveau. Vous pouvez maintenant passer au niveau suivant. 

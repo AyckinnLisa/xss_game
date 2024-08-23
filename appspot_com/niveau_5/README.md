@@ -2,8 +2,6 @@
 
 Les scripts intersites ne se limitent pas à l'échappement correct des données. Parfois, les attaquants peuvent faire de mauvaises choses même sans injecter de nouveaux éléments dans le DOM.
 
-Pour changer, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
-
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_5/img/lvl5_home.png"
@@ -12,7 +10,9 @@ Pour changer, le but est d'injecter un script pour faire apparaître un popup d'
 
 Dans ce niveau, on nous présente « Groovy Reader 2.0 » et il nous est demandé de nous inscrire à ce programme bêta exclusif.
 
-<br>Comme toujours, regardons les indices:
+Pour changer, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
+
+Comme toujours, regardons les indices:
 
 **Premier indice**
 

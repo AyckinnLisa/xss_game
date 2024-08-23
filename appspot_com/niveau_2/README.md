@@ -24,6 +24,8 @@ Injecter un script pour faire apparaître une [alert()] dans le contexte de l'ap
 
 <br>
 
+### INDICES
+
 **Premier indice**:
 > [!TIP]
 > <pre>

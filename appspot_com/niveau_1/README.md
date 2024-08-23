@@ -20,11 +20,11 @@ Injectez un script pour faire apparaître une alerte JavaScript() dans le cadre 
 Une fois l'alerte affichée, vous pourrez passer au niveau suivant.
 </pre>
 
+Nous choisirons l'option de la barre de recherche.
+
 <br>
 
 ### MISSION
-
-Nous choisirons l'option de la barre de recherche.
 
 Mais avant, regardons le **premier indice**:
 > [!TIP]
@@ -51,7 +51,11 @@ Mais avant, regardons le **premier indice**:
 > 3. Très bien, un dernier indice: &lt;script&gt; ... alert ...
 > </pre>
 
-<br>Bien, nous allons injecter le script d’alerte ci-dessous dans la barre de recherche:
+<br>
+
+### MISSION
+
+Bien, nous allons injecter le script d’alerte ci-dessous dans la barre de recherche:
 
 ```
 <script>alert("ACCES AUTORISE !");</script>        

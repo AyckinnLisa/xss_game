@@ -1,59 +1,67 @@
 ### NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
 
+### DESCRIPTION DE LA MISSION
+
 <pre>
 Comme vous l'avez vu au niveau précédent, certaines fonctions JS courantes sont des puits d'exécution, ce qui signifie 
 qu'elles entraînent l'exécution par le navigateur de tous les scripts qui apparaissent dans leur entrée.
 Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions sous le capot.
 
 L'application à ce niveau utilise un de ces puits cachés.
+</pre>
 
-Objectif de la mission
+<br>
+
+### OBJECTIF DE LA MISSION
+
+<pre>
 Comme précédemment, injectez un script pour faire apparaître un alert() JavaScript dans l'application.
-
-Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement
-l'adresse dans la barre d'URL ci-dessous.
 </pre>
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_3/img/lvl3_home.png"
-        style="width:80%">
-</div>
+> [!NOTE]
+> <pre>
+> Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement >l'adresse dans la barre d'URL ci-dessous.
+></pre>
 
-Cette fois, nous ne pourrons pas utiliser la page comme terrain de jeu car il n'y a pas de champ d'entrée.
-<br>Nous devraons donc travailler avec l'adresse URL pour injecter notre `payload`.
+<br>
 
-Regardons le premier indice:
+### INDICES
 
-<pre>
-1. To locate the cause of the bug, review the JavaScript to see where it handles user-supplied input.
-1. Pour localiser la cause du bug, examinez le JavaScript pour voir où il traite les données fournies par 
-l'utilisateur
-</pre>
+**Premier indice**:
+> [!TIP]
+> <pre>
+> 1. To locate the cause of the bug, review the JavaScript to see where it handles user-supplied input.
+> 1. Pour localiser la cause du bug, examinez le JavaScript pour voir où il traite les données fournies par 
+> l'utilisateur
+> </pre>
 
-Regardons le deuxième indice:
+**Deuxième indice**:
+> [!TIP]
+> <pre>
+> 2. Data in the window.location object can be influenced by an attacker.
+> 2. Les données de l'objet window.location peuvent être influencées par un attaquant.
+> </pre>
 
-<pre>
-2. Data in the window.location object can be influenced by an attacker.
-2. Les données de l'objet window.location peuvent être influencées par un attaquant.
-</pre>
+**Troisième indice**:
+> [!TIP]
+> <pre>
+> 3. When you've identified the injection point, think about what you need to do to sneak in a new HTML element.
+> 3. Quand vous aurez identifié le point d'injection, réfléchissez à ce qu'il faut faire pour introduire un nouvel 
+> élément HTML.
+> </pre>
 
-Regardons le troisième indice:
+**Quatrième indice**:
+> [!TIP]
+> <pre>
+> 4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after 
+> the page has loaded.
+> 4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur n'exécute
+> pas les scripts ajoutés après le chargement de la page.
+> </pre>
 
-<pre>
-3. When you've identified the injection point, think about what you need to do to sneak in a new HTML element.
-3. Quand vous aurez identifié le point d'injection, réfléchissez à ce qu'il faut faire pour introduire un nouvel 
-élément HTML.
-</pre>
+<br>
 
-Regardons le quatrième et dernier indice:
-
-<pre>
-4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after 
-the page has loaded.
-4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur n'exécute
-pas les scripts ajoutés après le chargement de la page.
-</pre>
+### MISSION
 
 Regardons, maintenant, les photos. On peut voir que l'ancre de l'URL change à chaque photo... logique.
 
@@ -85,8 +93,10 @@ Mais avant, nous allons essayer de comprendre un peu la logique de l'application
 "En quoi c'est interéssant" me direz-vous ?
 <br>Nous pouvons constater que le paramètre `num` est utilisé pour afficher l'image choisie par l'utilisateur. L'idée va donc être de casser les guillemets et d'inserer le script à la place du nom de l'image.
 
-**BONUS**: Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au moment 'T'.
-<br>C'est précisément ce paramètre variable qui va nous servir de faille.
+> [!TIP]
+>Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela >signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au >moment 'T'.
+
+C'est précisément ce paramètre variable qui va nous servir de faille.
 
 Dans la mesure où l'attribut `onerror` a bien fonctionné dans l'exercice précédent, nous allons le réutiliser dans l'URL:
 
@@ -94,10 +104,18 @@ Dans la mesure où l'attribut `onerror` a bien fonctionné dans l'exercice préc
 https://xss-game.appspot.com/level3/frame#3' onerror='alert("ACCES AUTORISE !")';
 ```
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_3/img/lvl3_complete.png"
-        style="width:80%">
-</div>
+<br>
 
-<br>Bravo, vous venez de passez le troisième niveau. Vous pouvez maintenant passer au niveau suivant. 
+> [!IMPORTANT]
+> <pre>
+> Congratulations, you executed an alert:
+>
+> ACCES AUTORISE !
+>
+> You can now advance to the next level.
+> </pre>
+
+<br>
+
+> [!NOTE]
+> Bravo, vous venez de passer le premier niveau. Vous pouvez maintenant passer au niveau suivant. 

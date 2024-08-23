@@ -1,8 +1,8 @@
 ### NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
 
 <pre>
-Comme vous l'avez vu au niveau précédent, certaines fonctions JS courantes sont des puits d'exécution, ce qui 
-signifie qu'elles entraînent l'exécution par le navigateur de tous les scripts qui apparaissent dans leur entrée.
+Comme vous l'avez vu au niveau précédent, certaines fonctions JS courantes sont des puits d'exécution, ce qui signifie 
+qu'elles entraînent l'exécution par le navigateur de tous les scripts qui apparaissent dans leur entrée.
 Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions sous le capot.
 
 L'application à ce niveau utilise un de ces puits cachés.
@@ -10,8 +10,7 @@ L'application à ce niveau utilise un de ces puits cachés.
 Objectif de la mission
 Comme précédemment, injectez un script pour faire apparaître un alert() JavaScript dans l'application.
 
-Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier 
-manuellement l'adresse dans la barre d'URL ci-dessous.
+Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement l'adresse dans la barre d'URL ci-dessous.
 </pre>
 
 <div align="center">

@@ -78,7 +78,7 @@ Mais avant, nous allons essayer de comprendre un peu la logique de l'application
 Dans la mesure où l'attribut `onerror` a bien fonctionné dans l'exercice précédent, nous allons le réutiliser dans l'URL:
 
 ```
-https://xss-game.appspot.com/level3/frame#3' onerror='alert("Hacked...")';
+https://xss-game.appspot.com/level3/frame#3' onerror='alert("ACCES AUTORISE !")';
 ```
 
 <div align="center">

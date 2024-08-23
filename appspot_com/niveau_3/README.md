@@ -10,7 +10,8 @@ L'application à ce niveau utilise un de ces puits cachés.
 Objectif de la mission
 Comme précédemment, injectez un script pour faire apparaître un alert() JavaScript dans l'application.
 
-Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement l'adresse dans la barre d'URL ci-dessous.
+Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement
+l'adresse dans la barre d'URL ci-dessous.
 </pre>
 
 <div align="center">
@@ -50,8 +51,8 @@ Regardons le quatrième et dernier indice:
 <pre>
 4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after 
 the page has loaded.
-4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur 
-n'exécute pas les scripts ajoutés après le chargement de la page.
+4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur n'exécute
+pas les scripts ajoutés après le chargement de la page.
 </pre>
 
 Regardons, maintenant, les photos. On peut voir que l'ancre de l'URL change à chaque photo... logique.

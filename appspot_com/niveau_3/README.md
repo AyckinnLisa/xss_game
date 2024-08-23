@@ -1,4 +1,4 @@
-### NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
+## NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
 
 ### DESCRIPTION DE LA MISSION
 
@@ -18,10 +18,12 @@ L'application à ce niveau utilise un de ces puits cachés.
 Comme précédemment, injectez un script pour faire apparaître un alert() JavaScript dans l'application.
 </pre>
 
+<br>
+
 > [!NOTE]
 > <pre>
-> Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement
-> l'adresse dans la barre d'URL ci-dessous.
+> Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier
+> manuellement l'adresse dans la barre d'URL ci-dessous.
 ></pre>
 
 <br>

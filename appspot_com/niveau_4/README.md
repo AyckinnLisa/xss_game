@@ -1,28 +1,23 @@
-### NIVEAU 4 - [CONTEXT MATTERS](https://xss-game.appspot.com/level4)
+## NIVEAU 4 - [CONTEXT MATTERS](https://xss-game.appspot.com/level4)
+
+### DESCRIPTION DE LA MISSION
 
 <pre>
 Chaque donnée fournie par l'utilisateur doit être correctement échappée dans le contexte de la page dans laquelle
 elle apparaîtra. Ce niveau montre pourquoi.
+</pre>
 
-Objectif de la mission
+<br>
+
+### OBJECTIF DE LA MISSION
+
+<pre>
 Injecter un script pour faire apparaître un alert() JavaScript dans l'application.
 </pre>
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_home.png"
-        style="width:100%">
-</div>
-
-<br>La page génère un timer pour lequel vous choisissez la durée, passé ce délai, un popup apparaît pour vous signaler la fin du décompte.
-
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_timer_demo.png"
-        style="width:100%">
-</div>
-
 <br>
+
+### INDICES
 
 **Premier indice**
 > [!TIP]
@@ -47,7 +42,19 @@ Injecter un script pour faire apparaître un alert() JavaScript dans l'applicati
 > 3. Essayez d'entrer un guillement simple (') et observez la console d'erreur.
 > </pre>
 
-Ouvrons la console du navigateur. Clic droit sur la page puis `Inspecter...` (suivant le navigateur), puis, cliquez sur `Console`.
+<br>
+
+### MISSION
+
+<br>La page génère un timer pour lequel vous choisissez la durée, passé ce délai, un popup apparaît pour vous signaler la fin du décompte.
+
+<div align="center">
+    <img
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_timer_demo.png"
+        style="width:100%">
+</div>
+
+<br>Ouvrons la console du navigateur. Clic droit sur la page puis `Inspecter...` (suivant le navigateur), puis, cliquez sur `Console`.
 <br>L'indice nous dit d'essayer d'entrer un simple guillement en tant que valeur pour le timer:
 
 <div align="center">
@@ -131,4 +138,4 @@ https://xss-game.appspot.com/level4/frame?timer=')%3Balert("ACCES AUTORISE !")%3
 <br>
 
 > [!NOTE]
-> Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 
+> Bravo, vous venez de passer le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 

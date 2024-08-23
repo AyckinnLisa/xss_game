@@ -118,16 +118,14 @@ Le signe `'` va générer une erreur puisque le compteur attend une valeur numé
 
 <br>
 
-> [!NOTE]
-><pre>
->Congratulations, you executed an alert:
+> [!IMPORTANT]
+> <pre>
+> Congratulations, you executed an alert:
 >
->ACCES AUTORISE !
+> ACCES AUTORISE !
 >
->You can now advance to the next level.
-></pre>
-
-<br>Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 
+> You can now advance to the next level.
+> </pre>
 
 > [!NOTE]
-> Test de note
+> Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 

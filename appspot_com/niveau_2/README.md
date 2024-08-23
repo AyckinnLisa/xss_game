@@ -3,8 +3,7 @@
 <pre>
 Les applications web conservent souvent les données des utilisateurs dans des bases de données côté serveur et,
 de plus en plus, côté client, et les affichent ensuite aux utilisateurs.
-Quelle que soit l'origine de ces données contrôlées par l'utilisateur, elles doivent être manipulées avec
-précaution.
+Quelle que soit l'origine de ces données contrôlées par l'utilisateur, elles doivent être manipulées avec précaution.
 
 Ce niveau montre à quel point les bogues XSS peuvent être facilement introduits dans des applications complexes.
 
@@ -15,16 +14,11 @@ Note : l'application enregistre vos messages, donc si vous insérez du code pour
 résolu à chaque fois que vous rechargerez l'application.
 </pre>
 
-Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice précédent, à savoir, injecter un script qui va générer un popup d’alerte.
-
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_home.png"
         style="width:80%">
 </div>
-
-<br>Il est à noter que l’application WEB enregistre tous les posts donc si vous insérez du code pour exécuter 
-l'alerte, ce niveau sera résolu à chaque fois que vous rechargerez l'application.
 
 Regardons le premier indice:
 

@@ -20,7 +20,8 @@ Comme précédemment, injectez un script pour faire apparaître un alert() JavaS
 
 > [!NOTE]
 > <pre>
-> Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement >l'adresse dans la barre d'URL ci-dessous.
+> Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier manuellement
+> l'adresse dans la barre d'URL ci-dessous.
 ></pre>
 
 <br>
@@ -93,6 +94,8 @@ Mais avant, nous allons essayer de comprendre un peu la logique de l'application
 "En quoi c'est interéssant" me direz-vous ?
 <br>Nous pouvons constater que le paramètre `num` est utilisé pour afficher l'image choisie par l'utilisateur. L'idée va donc être de casser les guillemets et d'inserer le script à la place du nom de l'image.
 
+<br>
+
 > [!TIP]
 >Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela >signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au >moment 'T'.
 
@@ -118,4 +121,4 @@ https://xss-game.appspot.com/level3/frame#3' onerror='alert("ACCES AUTORISE !")'
 <br>
 
 > [!NOTE]
-> Bravo, vous venez de passer le premier niveau. Vous pouvez maintenant passer au niveau suivant. 
+> Bravo, vous venez de passer le troisième niveau. Vous pouvez maintenant passer au niveau suivant. 

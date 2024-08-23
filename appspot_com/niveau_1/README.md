@@ -24,7 +24,7 @@ Nous choisirons l'option de la barre de recherche.
 
 <br>
 
-### MISSION
+### INDICES
 
 Mais avant, regardons le **premier indice**:
 > [!TIP]

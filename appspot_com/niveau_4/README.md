@@ -14,13 +14,15 @@ Injecter un script pour faire apparaître un alert() JavaScript dans l'applicati
         style="width:100%">
 </div>
 
-La page génère un timer pour lequel vous choisissez la durée, passé ce délai, un popup apparaît pour vous signaler la fin du décompte.
+<br>La page génère un timer pour lequel vous choisissez la durée, passé ce délai, un popup apparaît pour vous signaler la fin du décompte.
 
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_timer_demo.png"
         style="width:100%">
 </div>
+
+<br>
 
 **Premier indice**
 > [!TIP]

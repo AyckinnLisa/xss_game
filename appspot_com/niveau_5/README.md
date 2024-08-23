@@ -6,7 +6,7 @@ Pour changer, le but est d'injecter un script pour faire apparaître un popup d'
 
 <div align="center">
     <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl5_home.png"
+        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_5/img/lvl5_home.png"
         style="width:80%">
 </div>
 
@@ -48,8 +48,7 @@ D'un point de vue général, il est **TOUJOURS** utile de regarder le code sourc
 
 Lien du projet **I**nternet **E**ngineering **T**ask **F**orce: [IETF - Internet-Draft](https://datatracker.ietf.org/doc/html/draft-hoehrmann-javascript-scheme-00)
 
-
-La première page ne contient aucune fonctionnalité intéressante. Regardons les codes-sources des pages données sous la frame.
+<br>La première page ne contient aucune fonctionnalité intéressante. Regardons les codes-sources des pages données sous la frame.
 
 Ici, la page qui va nous intéresser est `signup.html` et plus précisément, la ligne 15:
 
@@ -84,13 +83,13 @@ https://xss-game.appspot.com/level5/frame/signup?next=confirm
 
 L'idée va être de placer le payload après `next=`. En l'état, le lien `Next >>` renvoie vers la page de confirmation `confirm.html`, mais elle peut renvoyer sur n'importe quoi.
 
-Il s'agit donc de remplacer `confirm` par `javascript:alert("ACCES AUTORISE !")`.
+Il s'agit donc de remplacer `confirm` par notre payload, par exemple: `javascript:alert("ACCES AUTORISE !")`.
 
 ```
 https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert("ACCES AUTORISE !")
 ```
 
-Ensuite, appuyez sur la touche `Entrée` ou cliquez sur le bouton `Go` une seule fois, pour prendre en compte le lien, puis, cliquez sur le lien `next>>`.
+Ensuite, appuyez sur la touche `Entrée` ou cliquez sur le bouton `Go` une seule fois, pour prendre en compte le lien, puis, cliquez sur le lien `Next>>`.
 
 <div align="center">
     <img
@@ -98,4 +97,4 @@ Ensuite, appuyez sur la touche `Entrée` ou cliquez sur le bouton `Go` une seule
         style="width:80%">
 </div>
 
-<br>Bravo, vous venez de passez le cinquième niveau. Vous pouvez maintenant passer au niveau suivant. 
+<br>Bravo, vous venez de passez le cinquième niveau. Vous pouvez maintenant passer au dernier niveau.

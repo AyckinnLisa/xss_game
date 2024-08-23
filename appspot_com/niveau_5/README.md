@@ -3,7 +3,8 @@
 ### DESCRIPTION DE LA MISSION
 
 <pre>
-Les scripts intersites ne se limitent pas à l'échappement correct des données. Parfois, les attaquants peuvent faire de mauvaises choses même sans injecter de nouveaux éléments dans le DOM.
+Les scripts intersites ne se limitent pas à l'échappement correct des données. Parfois, les attaquants peuvent faire
+de mauvaises choses même sans injecter de nouveaux éléments dans le DOM.
 </pre>
 
 <br>

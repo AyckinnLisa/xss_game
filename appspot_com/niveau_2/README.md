@@ -31,7 +31,6 @@ Regardons le premier indice:
 <pre>
 1. Note that the "welcome" post contains HTML, which indicates that the template doesn't escape the contents of
 status messages.
-
 1. Notez que le message de "bienvenue" contient du HTML, ce qui indique que le modèle n'échappe pas au contenu des
 messages d'état.
 </pre>
@@ -52,9 +51,8 @@ Voyons le deuxième indice:
 
 <pre>
 2. Entering a &lt;script&gt; tag on this level will not work. Try an element with a JavaScript attribute instead.
-
-2. Utiliser une balise &lt;script&gt; sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut
-JavaScript à la place.
+2. Utiliser une balise &lt;script&gt; sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut JavaScript
+à la place.
 </pre>
 
 Cet indice est suffisamment clair, je ne m'étends pas dessus.
@@ -63,7 +61,6 @@ Regardons le troisième indice:
 
 <pre>
 3. This level is sponsored by the letters i, m and g and the attribute onerror.
-
 3. Ce niveau est sponsorisé par les lettres i, m et g et l'attribut onerror.
 </pre>
 

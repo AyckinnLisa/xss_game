@@ -52,7 +52,7 @@ L'élément à garder dans ce troisième indice est l'attribut `onerror`.
 Il est maintenant temps d'injecter le `payload` dans le champs de texte:
 
 ```
-<img src='x' onerror='alert("Hacked... again!")'>
+<img src='x' onerror='alert("ACCES AUTORISE !!")'>
 ```
 
 On clique sur le bouton `Share status`:

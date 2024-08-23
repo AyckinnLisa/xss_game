@@ -110,18 +110,18 @@ Hum... Cela n'a pas d'autre effet que faire tourner le timer indéfiniement.
 https://xss-game.appspot.com/level4/frame?timer=')%3Balert("ACCES AUTORISE !")%3B('
 ```
 
-<br>
-
 #### Explications
 
 Le signe `'` va générer une erreur puisque le compteur attend une valeur numérique. C'est cette erreur que nous exploitons avec notre alerte.
 <br>Les `;` semblant être interdits dans la barre d'adresse (contrairement à l'exercice précédent), nous n'avons pas d'autres choix que de les encoder: `%3B`.
 <br>`(')` Permet de continuer l'exécution de la commande et lance le timer.
 
-<div align="center">
-    <img
-        src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_complete.png"
-        style="width:100%">
-</div>
+<pre>
+Congratulations, you executed an alert:
+
+ACCES AUTORISE !
+
+You can now advance to the next level.
+</pre>
 
 <br>Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 

@@ -1,6 +1,9 @@
 ### NIVEAU 1 - [HELLO, WORLD OF XSS](https://xss-game.appspot.com/level1)
 
-Dans ce premier exercice, il s’agit d’injecter un script qui va générer une alerte de type `popup`.
+<pre>
+Ce niveau illustre une cause fréquente de script intersite lorsque l'entrée de l'utilisateur
+est directement incluse dans la page sans échappatoire approprié.
+</pre>
 
 <div align="center">
     <img
@@ -8,15 +11,22 @@ Dans ce premier exercice, il s’agit d’injecter un script qui va générer un
         style="width:80%">
 </div>
 
-<br>Pour ce faire, il est possible d’utilser la barre d’adresse ou la barre de recherche dans la page directement.
+<pre>
+L'objectif est d'interagir avec la fenêtre de l'application vulnérable ci-dessous et trouver un 
+moyen de lui faire exécuter le JavaScript de votre choix.
+Vous pouvez effectuer des actions à l'intérieur de la fenêtre vulnérable ou modifier directement sa
+barre d'URL."
+</pre>
 
-Nous choisirons cette dernière option.
+Nous choisirons la première option.
 
 Mais avant, regardons le **premier indice**:
 
 <pre>
-1. To see the source of the application you can right-click on the frame and choose View Frame Source from the context menu or use your browser's developer tools to inspect network traffic.
-1. Pour voir la source de l'application, vous pouvez cliquer avec le bouton droit de la souris sur le cadre et choisir "Afficher la source du cadre" dans le menu contextuel ou utiliser les outils de développement de votre navigateur pour inspecter le trafic réseau.
+1. To see the source of the application you can right-click on the frame and choose View Frame
+Source from the context menu or use your browser's developer tools to inspect network traffic.
+1. Pour voir la source de l'application, vous pouvez cliquer avec le bouton droit de la souris
+sur le cadre et choisir "Afficher la source du cadre" dans le menu contextuel ou utiliser les outils de développement de votre navigateur pour inspecter le trafic réseau.
 </pre>
 
 **Second indice**:

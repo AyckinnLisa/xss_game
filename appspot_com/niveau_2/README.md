@@ -1,5 +1,20 @@
 ### NIVEAU 2 - [PERSISTENCE IS KEY](https://xss-game.appspot.com/level2)
 
+<pre>
+Les applications web conservent souvent les données des utilisateurs dans des bases de données côté serveur et,
+de plus en plus, côté client, et les affichent ensuite aux utilisateurs.
+Quelle que soit l'origine de ces données contrôlées par l'utilisateur, elles doivent être manipulées avec
+précaution.
+
+Ce niveau montre à quel point les bogues XSS peuvent être facilement introduits dans des applications complexes.
+
+Objectif de la mission
+Injecter un script pour faire apparaître une [alert()] dans le contexte de l'application.
+
+Note : l'application enregistre vos messages, donc si vous insérez du code pour exécuter l'alerte, ce niveau sera
+résolu à chaque fois que vous rechargerez l'application.
+</pre>
+
 Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice précédent, à savoir, injecter un script qui va générer un popup d’alerte.
 
 <div align="center">
@@ -8,14 +23,17 @@ Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice préc
         style="width:80%">
 </div>
 
-<br>Il est à noter que l’application WEB enregistre tous les posts donc si vous insérez du code pour exécuter l'alerte, ce niveau sera résolu à chaque fois que vous rechargerez l'application.
+<br>Il est à noter que l’application WEB enregistre tous les posts donc si vous insérez du code pour exécuter 
+l'alerte, ce niveau sera résolu à chaque fois que vous rechargerez l'application.
 
 Regardons le premier indice:
 
 <pre>
-1. Note that the "welcome" post contains HTML, which indicates that the template doesn't escape the contents of status messages.
+1. Note that the "welcome" post contains HTML, which indicates that the template doesn't escape the contents of
+status messages.
 
-1. Notez que le message de "bienvenue" contient du HTML, ce qui indique que le modèle n'échappe pas au contenu des messages d'état.
+1. Notez que le message de "bienvenue" contient du HTML, ce qui indique que le modèle n'échappe pas au contenu des
+messages d'état.
 </pre>
 
 Vérifions cela dans le code source du cadre:
@@ -27,14 +45,16 @@ Vérifions cela dans le code source du cadre:
 </div>
 
 Bien, ce sera notre faille.
-<br>Ce qu'il faut comprendre de ce code, c'est que les posts ne passent par aucun filtre. autrement, dit, nous pouvons utiliser n'importe qu'elle méthode pour attaquer la page.
+<br>Ce qu'il faut comprendre de ce code, c'est que les posts ne passent par aucun filtre. autrement, dit, nous
+pouvons utiliser n'importe qu'elle méthode pour attaquer la page.
 
 Voyons le deuxième indice:
 
 <pre>
 2. Entering a &lt;script&gt; tag on this level will not work. Try an element with a JavaScript attribute instead.
 
-2. Utiliser une balise &lt;script&gt; sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut JavaScript à la place.
+2. Utiliser une balise &lt;script&gt; sur ce niveau ne fonctionnera pas. Essayez un élément avec un attribut
+JavaScript à la place.
 </pre>
 
 Cet indice est suffisamment clair, je ne m'étends pas dessus.

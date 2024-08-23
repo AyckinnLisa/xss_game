@@ -127,3 +127,6 @@ You can now advance to the next level.
 </pre>
 
 <br>Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 
+
+> [!NOTE]
+> Test de note

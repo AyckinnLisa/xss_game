@@ -23,27 +23,27 @@ La page génère un timer pour lequel vous choisissez la durée, passé ce déla
 </div>
 
 **Premier indice**
-
-<pre>
-1. Take a look at how the startTimer function is called.
-1. Regardez comment la fonction "startTimer est appelée."
-</pre>
+> [!TIP]
+> <pre>
+> 1. Take a look at how the startTimer function is called.
+> 1. Regardez comment la fonction "startTimer est appelée."
+> </pre>
 
 **Second indice**
-
-<pre>
-2. When browsers parse tag attributes, they HTML-decode their values first. &lt;foo bar='z'&gt; is the same as 
-&lt;foo bar='&amp#x7a;'
-2. Lorsque les navigateurs analysent les attributs des balises, ils décodent d'abord leurs valeurs en HTML. 
-&lt;foo bar='z'&gt; est la même chose que &lt;foo bar='&amp#x7a;'
-</pre>
+> [!TIP]
+> <pre>
+> 2. When browsers parse tag attributes, they HTML-decode their values first. &lt;foo bar='z'&gt; is the same as 
+> &lt;foo bar='&amp#x7a;'
+> 2. Lorsque les navigateurs analysent les attributs des balises, ils décodent d'abord leurs valeurs en HTML. 
+> &lt;foo bar='z'&gt; est la même chose que &lt;foo bar='&amp#x7a;'
+> </pre>
 
 **Troisième indice**
-
-<pre>
-3. Try entering a single quote (') and watch the error console.
-3. Essayez d'entrer un guillement simple (') et observez la console d'erreur.
-</pre>
+> [!TIP]
+> <pre>
+> 3. Try entering a single quote (') and watch the error console.
+> 3. Essayez d'entrer un guillement simple (') et observez la console d'erreur.
+> </pre>
 
 Ouvrons la console du navigateur. Clic droit sur la page puis `Inspecter...` (suivant le navigateur), puis, cliquez sur `Console`.
 <br>L'indice nous dit d'essayer d'entrer un simple guillement en tant que valeur pour le timer:

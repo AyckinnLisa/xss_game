@@ -1,8 +1,12 @@
 ### NIVEAU 4 - [CONTEXT MATTERS](https://xss-game.appspot.com/level4)
 
-Chaque donnée fournie par l'utilisateur doit être correctement échappée dans le contexte de la page dans laquelle elle apparaîtra. Ce niveau montre pourquoi.
+<pre>
+Chaque donnée fournie par l'utilisateur doit être correctement échappée dans le contexte de la page dans laquelle
+elle apparaîtra. Ce niveau montre pourquoi.
 
-Ici encore, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
+Objectif de la mission
+Injecter un script pour faire apparaître un alert() JavaScript dans l'application.
+</pre>
 
 <div align="center">
     <img
@@ -28,8 +32,10 @@ La page génère un timer pour lequel vous choisissez la durée, passé ce déla
 **Second indice**
 
 <pre>
-2. When browsers parse tag attributes, they HTML-decode their values first. &lt;foo bar='z'&gt; is the same as &lt;foo bar='&amp#x7a;'
-2. Lorsque les navigateurs analysent les attributs des balises, ils décodent d'abord leurs valeurs en HTML. &lt;foo bar='z'&gt; est la même chose que &lt;foo bar='&amp#x7a;'
+2. When browsers parse tag attributes, they HTML-decode their values first. &lt;foo bar='z'&gt; is the same as 
+&lt;foo bar='&amp#x7a;'
+2. Lorsque les navigateurs analysent les attributs des balises, ils décodent d'abord leurs valeurs en HTML. 
+&lt;foo bar='z'&gt; est la même chose que &lt;foo bar='&amp#x7a;'
 </pre>
 
 **Troisième indice**

@@ -36,7 +36,7 @@ Mais avant, regardons le **premier indice**:
 Nous allons injecter le script d’alerte comme suit :
 
 ```
-<script>alert("hacked");</script>        
+<script>alert("ACCES AUTORISE !");</script>        
 ```
 
 <div align="center">

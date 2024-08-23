@@ -1,9 +1,18 @@
 ### NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
 
-Comme nous l'avons vu dans le niveau précédent, certaines fonctions JavaScript courantes sont des mines d'or pour l'exécution de code, ce qui signifie qu'elles exécutent, par le navigateur, tous les scripts qui apparaissent dans leur champ d'entrée.
-<br>Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions en sous-marin.
+<pre>
+Comme vous l'avez vu au niveau précédent, certaines fonctions JS courantes sont des puits d'exécution, ce qui 
+signifie qu'elles entraînent l'exécution par le navigateur de tous les scripts qui apparaissent dans leur entrée.
+Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions sous le capot.
 
-Ici encore, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
+L'application à ce niveau utilise un de ces puits cachés.
+
+Objectif de la mission
+Comme précédemment, injectez un script pour faire apparaître un alert() JavaScript dans l'application.
+
+Puisque vous ne pouvez pas entrer votre charge utile n'importe où dans l'application, vous devrez modifier 
+manuellement l'adresse dans la barre d'URL ci-dessous.
+</pre>
 
 <div align="center">
     <img
@@ -18,7 +27,8 @@ Regardons le premier indice:
 
 <pre>
 1. To locate the cause of the bug, review the JavaScript to see where it handles user-supplied input.
-1. Pour localiser la cause du bug, examinez le JavaScript pour voir où il traite les données fournies par l'utilisateur
+1. Pour localiser la cause du bug, examinez le JavaScript pour voir où il traite les données fournies par 
+l'utilisateur
 </pre>
 
 Regardons le deuxième indice:
@@ -32,14 +42,17 @@ Regardons le troisième indice:
 
 <pre>
 3. When you've identified the injection point, think about what you need to do to sneak in a new HTML element.
-3. Quand vous aurez identifié le point d'injection, réfléchissez à ce qu'il faut faire pour introduire un nouvel élément HTML.
+3. Quand vous aurez identifié le point d'injection, réfléchissez à ce qu'il faut faire pour introduire un nouvel 
+élément HTML.
 </pre>
 
 Regardons le quatrième et dernier indice:
 
 <pre>
-4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after the page has loaded.
-4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur n'exécute pas les scripts ajoutés après le chargement de la page.
+4. As before, using &lt;script&gt; as a payload won't work because the browser won't execute scripts added after 
+the page has loaded.
+4. Comme précédemment, l'utilisation de &lt;script&gt; comme charge utile ne fonctionnera pas car le navigateur 
+n'exécute pas les scripts ajoutés après le chargement de la page.
 </pre>
 
 Regardons, maintenant, les photos. On peut voir que l'ancre de l'URL change à chaque photo... logique.

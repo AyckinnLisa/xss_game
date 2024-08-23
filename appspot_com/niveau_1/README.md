@@ -5,8 +5,8 @@ Ce niveau illustre une cause fréquente de script intersite lorsque l'entrée de
 dans la page sans échappatoire approprié.
 
 Interagissez avec la fenêtre de l'application vulnérable ci-dessous et trouvez un moyen de lui faire exécuter 
-le JavaScript de votre choix. Vous pouvez effectuer des actions à l'intérieur de la fenêtre vulnérable ou 
-modifier directement sa barre d'URL.
+le JavaScript de votre choix. Vous pouvez effectuer des actions à l'intérieur de la fenêtre vulnérable ou modifier
+directement sa barre d'URL.
 </pre>
 
 <div align="center">
@@ -15,15 +15,16 @@ modifier directement sa barre d'URL.
         style="width:80%">
 </div>
 
-Nous choisirons la première option.
+Nous choisirons l'option de la barre de recherche.
 
 Mais avant, regardons le **premier indice**:
 
 <pre>
-1. To see the source of the application you can right-click on the frame and choose View Frame
-Source from the context menu or use your browser's developer tools to inspect network traffic.
-1. Pour voir la source de l'application, vous pouvez cliquer avec le bouton droit de la souris
-sur le cadre et choisir "Afficher la source du cadre" dans le menu contextuel ou utiliser les outils de développement de votre navigateur pour inspecter le trafic réseau.
+1. To see the source of the application you can right-click on the frame and choose View Frame Source from the
+context menu or use your browser's developer tools to inspect network traffic.
+1. Pour voir la source de l'application, vous pouvez cliquer avec le bouton droit de la souris sur le cadre et
+choisir "Afficher la source du cadre" dans le menu contextuel ou utiliser les outils de développement de votre
+navigateur pour inspecter le trafic réseau.
 </pre>
 
 **Second indice**:

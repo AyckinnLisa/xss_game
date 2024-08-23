@@ -123,7 +123,7 @@ La page a essayé d'afficher l'image `x`. Comme cette image n'existe pas, elle a
 > <pre>
 > Congratulations, you executed an alert:
 >
-> ACCES AUTORISE !
+> ACCES AUTORISE !!
 >
 > You can now advance to the next level.
 > </pre>

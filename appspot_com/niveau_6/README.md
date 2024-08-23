@@ -131,7 +131,7 @@ https://xss-game.appspot.com/level6/frame#hTtps://payload.jh123x.com/alert.js
 
 > [!TIP]
 > Une autre possibilité aurait été d'injecter une donnée URL:
-> ```javascript
+> ```js
 > data:text/plain,alert('ACCES AUTORISE !')
 > ```
 

@@ -116,6 +116,8 @@ Le signe `'` va générer une erreur puisque le compteur attend une valeur numé
 <br>Les `;` semblant être interdits dans la barre d'adresse (contrairement à l'exercice précédent), nous n'avons pas d'autres choix que de les encoder: `%3B`.
 <br>`(')` Permet de continuer l'exécution de la commande et lance le timer.
 
+<br>
+
 <pre>
 Congratulations, you executed an alert:
 

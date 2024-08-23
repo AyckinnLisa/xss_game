@@ -88,7 +88,7 @@ Voyons à quoi fait référence cette erreur:
 25  </html>
 ```
 
-L'idée va donc être de placer le payload dans la `startTimer`. 
+L'idée va donc être de placer le payload dans la fonction `startTimer`. 
 <br>Essayons donc le script dans la barre d'adresse, en effet, le champ de saisie du timer ne fonctionne pas:
 
 ```html

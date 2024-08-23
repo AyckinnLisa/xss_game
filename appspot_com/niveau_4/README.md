@@ -11,7 +11,7 @@ Injecter un script pour faire apparaître un alert() JavaScript dans l'applicati
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_home.png"
-        style="width:80%">
+        style="width:100%">
 </div>
 
 La page génère un timer pour lequel vous choisissez la durée, passé ce délai, un popup apparaît pour vous signaler la fin du décompte.
@@ -19,7 +19,7 @@ La page génère un timer pour lequel vous choisissez la durée, passé ce déla
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_timer_demo.png"
-        style="width:80%">
+        style="width:100%">
 </div>
 
 **Premier indice**
@@ -51,7 +51,7 @@ Ouvrons la console du navigateur. Clic droit sur la page puis `Inspecter...` (su
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_simple_quote.png"
-        style="width:80%">
+        style="width:100%">
 </div>
 
 Nous pouvons voir que cela génère une erreur dans la console, de plus, le compteur tourne indéfiniement, logique puisqu'il n'a pas de valeur numérique pour démarrer le décompte.
@@ -61,10 +61,10 @@ Voyons à quoi fait référence cette erreur:
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_error_console.png"
-        style="width:80%">
+        style="width:100%">
 </div>
 
-<br>Il semblerait que l'erreur se produise à la ligne 21, cliquez sur `frame:21`, ce qui, normalement, vous place directement sur la ligne concernée, la 21:
+<br>Il semblerait que l'erreur se produise à la ligne 21, cliquez sur `frame:21`, ce qui, normalement, vous place directement sur la ligne concernée:
 
 ```html
 1   <!doctype html>
@@ -95,7 +95,7 @@ Voyons à quoi fait référence cette erreur:
 ```
 
 L'idée va donc être de placer le payload dans la fonction `startTimer`. 
-<br>Essayons donc le script dans la barre d'adresse, en effet, le champ de saisie du timer ne fonctionne pas:
+<br>Essayons le script dans la barre d'adresse, le champ de saisie du timer ne fonctionne pas:
 
 ```html
 https://xss-game.appspot.com/level4/frame?timer=');alert("ACCES AUTORISE !");('
@@ -121,7 +121,7 @@ Le signe `'` va générer une erreur puisque le compteur attend une valeur numé
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_4/img/lvl4_complete.png"
-        style="width:80%">
+        style="width:100%">
 </div>
 
 <br>Bravo, vous venez de passez le quatrième niveau. Vous pouvez maintenant passer au niveau suivant. 

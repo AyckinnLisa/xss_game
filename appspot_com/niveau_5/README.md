@@ -8,9 +8,8 @@ Les scripts intersites ne se limitent pas à l'échappement correct des données
         style="width:80%">
 </div>
 
-Dans ce niveau, on nous présente « Groovy Reader 2.0 » et il nous est demandé de nous inscrire à ce programme bêta exclusif.
-
-Pour changer, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
+<br>Dans ce niveau, on nous présente « Groovy Reader 2.0 » et il nous est demandé de nous inscrire à ce programme bêta exclusif.
+<br>Pour changer, le but est d'injecter un script pour faire apparaître un popup d'alerte en JavaScript dans l'application.
 
 Comme toujours, regardons les indices:
 

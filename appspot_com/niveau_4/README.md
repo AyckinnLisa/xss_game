@@ -1,4 +1,4 @@
-## [**NIVEAU 4 - CONTEXT MATTERS**](https://xss-game.appspot.com/level3)
+## [**NIVEAU 4 - CONTEXT MATTERS**](https://xss-game.appspot.com/level4)
 
 Chaque donnée fournie par l'utilisateur doit être correctement échappée dans le contexte de la page dans laquelle elle apparaîtra. Ce niveau montre pourquoi.
 
@@ -58,7 +58,7 @@ Voyons à quoi fait référence cette erreur:
         style="width:80%">
 </div>
 
-Il semblerait que l'erreur se produise à la ligne 21, cliquez sur `frame:21`, ce qui, normalement, vous place directement sur la ligne concernée, la 21:
+<br>Il semblerait que l'erreur se produise à la ligne 21, cliquez sur `frame:21`, ce qui, normalement, vous place directement sur la ligne concernée, la 21:
 
 ```html
 1   <!doctype html>
@@ -96,6 +96,7 @@ https://xss-game.appspot.com/level4/frame?timer=');alert("ACCES AUTORISE !");('
 ```
 
 Hum... Cela n'a pas d'autre effet que faire tourner le timer indéfiniement.
+
 <br>Il s'agit donc de comprendre ce qui ne va pas dans ce script.
 <br>Après plusieurs essais et de multiples recherches, j'ai essayé en remplaçant le `;` par son code URL : `%3B`:
 

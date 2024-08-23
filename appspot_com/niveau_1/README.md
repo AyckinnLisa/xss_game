@@ -1,8 +1,12 @@
 ### NIVEAU 1 - [HELLO, WORLD OF XSS](https://xss-game.appspot.com/level1)
 
 <pre>
-Ce niveau illustre une cause fréquente de script intersite lorsque l'entrée de l'utilisateur
-est directement incluse dans la page sans échappatoire approprié.
+Ce niveau illustre une cause fréquente de script intersite lorsque l'entrée de l'utilisateur est directement incluse
+dans la page sans échappatoire approprié.
+
+Interagissez avec la fenêtre de l'application vulnérable ci-dessous et trouvez un moyen de lui faire exécuter 
+le JavaScript de votre choix. Vous pouvez effectuer des actions à l'intérieur de la fenêtre vulnérable ou 
+modifier directement sa barre d'URL.
 </pre>
 
 <div align="center">
@@ -10,13 +14,6 @@ est directement incluse dans la page sans échappatoire approprié.
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_1/img/lvl1_home.png"
         style="width:80%">
 </div>
-
-<pre>
-L'objectif est d'interagir avec la fenêtre de l'application vulnérable ci-dessous et trouver un 
-moyen de lui faire exécuter le JavaScript de votre choix.
-Vous pouvez effectuer des actions à l'intérieur de la fenêtre vulnérable ou modifier directement sa
-barre d'URL."
-</pre>
 
 Nous choisirons la première option.
 

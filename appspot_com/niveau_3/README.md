@@ -1,4 +1,4 @@
-## [**NIVEAU 3 - THAT SINKING FEELING...**](https://xss-game.appspot.com/level3)
+### NIVEAU 3 - [THAT SINKING FEELING...](https://xss-game.appspot.com/level3)
 
 Comme nous l'avons vu dans le niveau précédent, certaines fonctions JavaScript courantes sont des mines d'or pour l'exécution de code, ce qui signifie qu'elles exécutent, par le navigateur, tous les scripts qui apparaissent dans leur champ d'entrée.
 <br>Parfois, ce fait est caché par des API de niveau supérieur qui utilisent l'une de ces fonctions en sous-marin.

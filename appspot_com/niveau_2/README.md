@@ -1,4 +1,4 @@
-## [**NIVEAU 2 - PERSISTENCE IS KEY**](https://xss-game.appspot.com/level2)
+### NIVEAU 2 - [PERSISTENCE IS KEY](https://xss-game.appspot.com/level2)
 
 Il s’agit, pour ce niveau, de faire la même chose que dans l’exercice précédent, à savoir, injecter un script qui va générer un popup d’alerte.
 

@@ -1,4 +1,4 @@
-## [**NIVEAU 1 - HELLO, WORLD OF XSS**](https://xss-game.appspot.com/level1)
+### NIVEAU 1 - [HELLO, WORLD OF XSS](https://xss-game.appspot.com/level1)
 
 Dans ce premier exercice, il s’agit d’injecter un script qui va générer une alerte de type `popup`.
 

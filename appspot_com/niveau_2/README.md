@@ -70,8 +70,9 @@ Vérifions cela dans le code source du cadre:
 ```
 
 Bien, ce sera notre faille.
-<br>Ce qu'il faut comprendre de ce code, c'est que les posts ne passent par aucun filtre. autrement, dit, nous
-pouvons utiliser n'importe qu'elle méthode pour attaquer la page.
+
+Ce qu'il faut comprendre de ce code, c'est qu'il y a une fonction de remplacement de code HTML: `containerEl.innerHTML`.
+<br>Ce qui signifie que, quel que soit le script que vous entrerez dans le champ de post, il ne sera pas traité en l'état, car la fonction empêche l'utilisation des balises &lt;script&gt;.
 
 <br>
 
@@ -99,7 +100,12 @@ L'élément à garder dans ce troisième indice est l'attribut `onerror`.
 
 ### MISSION
 
-Il est maintenant temps d'injecter le `payload` dans le champs de texte:
+Comme il ne nous est pas possible d'utiliser de balises &lt;script&gt;, nous utiliserons une balise &lt;img&gt;.
+
+> [!NOTE]
+> Peut importe ce que nous mettrons comme lien d'image puisque le but est précisément de générer une erreur, nous mettrons donc un simple `x`.
+
+<br>Il est maintenant temps d'injecter le `payload` dans le champs de texte.
 
 ```
 <img src='x' onerror='alert("ACCES AUTORISE !!")'>

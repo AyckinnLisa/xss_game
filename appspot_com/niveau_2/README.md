@@ -111,6 +111,8 @@ Comme il ne nous est pas possible d'utiliser de balises &lt;script&gt;, nous uti
 <img src='x' onerror='alert("ACCES AUTORISE !!")'>
 ```
 
+<br>
+
 <div align="center">
     <img
         src="https://github.com/AyckinnLisa/xss_game/blob/main/appspot_com/niveau_2/img/lvl2_hacked.png"

